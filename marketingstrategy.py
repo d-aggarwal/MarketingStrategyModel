@@ -80,4 +80,4 @@ if __name__ == '__main__':
     if not api_key:
         raise ValueError("GEMINI_API_KEY not found in .env file")
     generator = MarketingStrategyPlanner(api_key)
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=5000)
