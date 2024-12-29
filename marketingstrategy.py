@@ -77,7 +77,8 @@ def generate_strategy():
 
 if __name__ == '__main__':
     api_key = os.getenv('GEMINI_API_KEY')
+    port = int(os.environ.get('PORT', 5000))
     if not api_key:
         raise ValueError("GEMINI_API_KEY not found in .env file")
     generator = MarketingStrategyPlanner(api_key)
-    app.run(host='0.0.0.0', debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=port)
