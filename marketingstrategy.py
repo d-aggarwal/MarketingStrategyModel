@@ -55,7 +55,7 @@ class MarketingStrategyPlanner:
                     max_output_tokens=8192
                 )
             )
-            return jsonify(response.text)
+            return response.text
         except Exception as e:
             print(f"Error generating marketing strategy: {str(e)}")
             return None
