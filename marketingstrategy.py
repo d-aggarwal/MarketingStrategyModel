@@ -64,7 +64,7 @@ generator = None
 
 
 
-@app.route('/generate', methods=['POST'])
+@app.route('/', methods=['POST'])
 def generate_strategy():
     try:
         data = request.get_json()
