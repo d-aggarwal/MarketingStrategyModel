@@ -1,16 +1,1 @@
-{
-    "version": 2,
-    "builds": [
-      {
-        "src": "marketingstrategy.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/generate",
-        "dest": "marketingstrategy.py"
-      }
-    ]
-  }
-  
+
